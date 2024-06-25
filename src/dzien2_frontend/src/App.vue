@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue"
 import { dzien2_backend } from "declarations/dzien2_backend/index"
+import Blog from './components/Blog.vue';
 let greeting = ref("")
 
 async function handleSubmit(e) {
