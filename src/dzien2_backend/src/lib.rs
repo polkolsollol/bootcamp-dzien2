@@ -11,6 +11,7 @@ fn greet(name: String, last_name: i8) -> String {
 
 #[ic_cdk::update]
 fn dodaj_wpis(wpis: String) {
+
     WPISY.with(|wpisy: &RefCell<Vec<String>>| {
         wpisy.borrow_mut().push(wpis)
     });
